@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apogee · A browser for Mac</title>
+<meta name="description" content="Apogee is a native Mac browser by Gzowo Labs. Every ad blocked, YouTube without the noise, answer boards from the address bar and an assistant that does the clicking. Free for Apple Silicon and Intel Macs.">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://apogee.gzowo.fun/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Apogee">
+<meta property="og:title" content="Apogee, a browser for Mac">
+<meta property="og:description" content="Every ad blocked, YouTube without the noise, answer boards from the address bar and an assistant that does the clicking. Free for Apple Silicon and Intel.">
+<meta property="og:url" content="https://apogee.gzowo.fun/">
+<meta property="og:image" content="https://apogee.gzowo.fun/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/horizon-1672.jpg" imagesrcset="assets/horizon-960.jpg 960w, assets/horizon-1672.jpg 1672w" imagesizes="100vw">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arch" viewBox="18 22 64 58"><path d="M22 76 Q50 -24 78 76 L68 76 Q50 -17 32 76 Z"/></symbol>
+  <symbol id="shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.6c0 4.6 3.1 8.3 7.5 9.4 4.4-1.1 7.5-4.8 7.5-9.4V6L12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="spark" viewBox="0 0 24 24"><path d="M12 2.5c.5 4.6 2.4 8 9.5 9.5-7.1 1.5-9 4.9-9.5 9.5-.5-4.6-2.4-8-9.5-9.5 7.1-1.5 9-4.9 9.5-9.5Z" fill="currentColor"/></symbol>
+  <symbol id="lock" viewBox="0 0 24 24"><path d="M7 10V7.5a5 5 0 0 1 10 0V10" fill="none" stroke="currentColor" stroke-width="2"/><rect x="5" y="10" width="14" height="11" rx="2.5" fill="currentColor"/></symbol>
+  <symbol id="mic" viewBox="0 0 24 24"><rect x="8.5" y="3" width="7" height="12" rx="3.5" fill="currentColor"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 12h9M18 12v3.5M15.5 12v2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9.5 2.5v3M14.5 2.5v3M9.5 18.5v3M14.5 18.5v3M2.5 9.5h3M2.5 14.5h3M18.5 9.5h3M18.5 14.5h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="down" viewBox="0 0 24 24"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Apogee"><svg class="arch"><use href="#arch"/></svg><span>Apogee</span></a>
+  <nav class="links" aria-label="Sections">
+    <a href="#features">Features</a>
+    <a href="#new">What's new</a>
+    <a href="#compare">Compare</a>
+    <a href="#install">Install</a>
+  </nav>
+  <a class="nav-dl" href="#download">Download</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy wrap">
+      <p class="eyebrow">A browser for Mac by Gzowo Labs</p>
+      <h1>The web at its <em>highest</em> point.</h1>
+      <p class="lede">A native Mac browser built on WebKit. Every ad blocked, YouTube without the noise, answers drawn as boards and an assistant that does the clicking for you.</p>
+      <div class="dl" id="download" data-dl>
+        <a class="chip" data-arch="arm64" href="https://github.com/JerzySukiennik/apogee/releases/latest/download/Apogee-Apple-Silicon.dmg">
+          <svg class="chip-ic"><use href="#chip"/></svg>
+          <span class="chip-t"><b>Apple Silicon</b><small>M1 and newer · <span data-size="arm64">1.4 MB</span></small></span>
+          <svg class="chip-dl"><use href="#down"/></svg>
+          <span class="chip-tag">Your Mac</span>
+        </a>
+        <a class="chip" data-arch="x86_64" href="https://github.com/JerzySukiennik/apogee/releases/latest/download/Apogee-Intel.dmg">
+          <svg class="chip-ic"><use href="#chip"/></svg>
+          <span class="chip-t"><b>Intel</b><small>Intel Macs · <span data-size="x86_64">1.5 MB</span></small></span>
+          <svg class="chip-dl"><use href="#down"/></svg>
+          <span class="chip-tag">Your Mac</span>
+        </a>
+      </div>
+      <p class="dl-meta"><span data-dl-note>Version 0.3 · Free · macOS 14 Sonoma or later</span><span class="sep">·</span><a href="#install">How to open it</a></p>
+      <details class="which">
+        <summary>Which one do I need?</summary>
+        <p>Open the Apple menu and choose About This Mac. If it says <b>Chip: Apple M1</b> or any other M chip, take Apple Silicon. If it says <b>Processor: Intel</b>, take Intel.</p>
+      </details>
+    </div>
+    <div class="sky" aria-hidden="true">
+      <img src="assets/horizon-1672.jpg" srcset="assets/horizon-960.jpg 960w, assets/horizon-1672.jpg 1672w" sizes="max(100vw, 820px)" alt="" width="1672" height="941" fetchpriority="high">
+    </div>
+  </section>
+
+  <section class="show" aria-label="The Apogee window">
+    <div class="win win-xl reveal">
+      <div class="strip">
+        <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="pins" aria-hidden="true">
+          <span class="pin"><span class="lt" style="background:#fff;color:#000">▶</span></span>
+          <span class="pin"><span class="lt" style="background:#e5e5ea;color:#000">M</span></span>
+          <span class="pin"><span class="lt">W</span></span>
+          <span class="pin"><span class="lt">G</span></span>
+        </span>
+        <span class="tab on"><span class="tt">New Tab</span><span class="x">×</span></span>
+        <span class="tab"><span class="fq">?</span><span class="tt">The farthest point of an orbit</span></span>
+        <span class="tab wide"><span class="fq yt">▶</span><span class="tt">Sunrise from orbit, 4K</span></span>
+        <span class="plus">+</span>
+      </div>
+      <div class="navrow">
+        <span class="navb">‹</span><span class="navb dim">›</span><span class="navb">↻</span>
+        <span class="addr"><span class="ph">Search, or type ?question</span><svg class="sh"><use href="#shield"/></svg></span>
+        <span class="ai"><svg><use href="#spark"/></svg></span>
+      </div>
+      <div class="newtab">
+        <div class="clk" data-clock>9:41</div>
+        <div class="dt" data-date>Monday, November 9</div>
+        <div class="gr"><span class="ring"></span><span data-greet>Good morning.</span></div>
+        <div class="fav">
+          <span><i class="tile"><span class="lt" style="background:#fff;color:#000">▶</span></i>YouTube</span>
+          <span><i class="tile"><span class="lt" style="background:#e5e5ea;color:#000">M</span></i>Gmail</span>
+          <span><i class="tile"><span class="lt">W</span></i>Wikipedia</span>
+          <span><i class="tile"><span class="lt">G</span></i>GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap head reveal">
+      <p class="kicker">Features</p>
+      <h2>Everything built in. <em>Nothing</em> to install.</h2>
+      <p class="sub">No extensions, no add-ons, no account. Every demo below is live, so go ahead and press things.</p>
+    </div>
+
+    <article class="feat wrap" id="canvas">
+      <div class="feat-text reveal">
+        <p class="label" style="--c:var(--blue)">Canvas</p>
+        <h3>Ask with a <em>question mark</em>.</h3>
+        <p>Type <kbd>?</kbd> and a question in the address bar and Apogee builds a board: a straight answer, facts with their sources, diagrams and small simulations you can play with. Follow-ups land on the same board, and <kbd>⇧</kbd><kbd>↩</kbd> turns any search into one.</p>
+        <ul class="ticks">
+          <li>The answer in about a second, the full board in five to eight</li>
+          <li>Real photos from Wikimedia Commons, never generated ones</li>
+          <li>Boards disappear when you close them</li>
+        </ul>
+      </div>
+      <div class="demo reveal" data-demo="canvas">
+        <div class="win">
+          <div class="navrow mini"><span class="addr"><span class="typed" data-typed></span><span class="caret" aria-hidden="true"></span></span></div>
+          <div class="board" data-board aria-live="polite"></div>
+        </div>
+        <div class="tries" role="group" aria-label="Try a question">
+          <button type="button" data-q="apogee" class="on">?what is an apogee</button>
+          <button type="button" data-q="nozzle">?how does a rocket nozzle work</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="feat wrap flip" id="max">
+      <div class="feat-text reveal">
+        <p class="label" style="--c:var(--acc)">Max and the agent</p>
+        <h3>Max reads the page. The agent does the <em>clicking</em>.</h3>
+        <p>Press <kbd>⌘J</kbd> and ask about anything on screen, long videos included. Ask it to do something and the agent takes over the tab: it searches, clicks and types on its own, then stops and asks before payments, passwords, purchases, messages and deleting anything. <kbd>esc</kbd> stops it at any time.</p>
+        <ul class="ticks">
+          <li>A separate conversation for every tab</li>
+          <li>Pick its name, personality and color</li>
+          <li>Runs on Google Gemini with your own free key</li>
+        </ul>
+      </div>
+      <div class="demo reveal" data-demo="max">
+        <div class="win">
+          <div class="navrow mini"><span class="addr"><svg class="lk"><use href="#lock"/></svg>orbit-supply.example/cables</span><span class="ai on"><svg><use href="#spark"/></svg></span></div>
+          <div class="split">
+            <div class="shop" data-shop>
+              <div class="shop-h"><b>Orbit Supply</b><span class="cart">Cart <i data-cart>0</i></span></div>
+              <p class="shop-t">USB-C cables</p>
+              <div class="prods">
+                <div class="prod" data-p="braided"><span class="pimg"><i></i></span><b>Braided cable</b><small>1 m · 100 W</small><span class="price">$12.99</span><span class="btn">Add to cart</span></div>
+                <div class="prod" data-p="long"><span class="pimg"><i></i></span><b>Fast charge cable</b><small>2 m · 60 W</small><span class="price">$7.49</span><span class="btn">Add to cart</span></div>
+                <div class="prod" data-p="basic"><span class="pimg"><i></i></span><b>Basic cable</b><small>1 m · 60 W</small><span class="price">$4.99</span><span class="btn" data-buy>Add to cart</span></div>
+              </div>
+              <div class="checkout" data-checkout><span>Checkout</span><b>Basic cable</b><span class="pay">Pay $4.99</span></div>
+            </div>
+            <aside class="panel">
+              <div class="ph"><span class="halo"></span><b>Max</b><span class="pdim">This tab</span></div>
+              <div class="msgs" data-msgs><p class="hint">Ask about this page, or tell Max to do something.</p></div>
+              <div class="inp"><span data-inp>Ask Max</span><span class="send">↑</span></div>
+            </aside>
+          </div>
+          <span class="cursor" data-cursor aria-hidden="true"></span>
+        </div>
+        <div class="tries" role="group" aria-label="Try Max">
+          <button type="button" data-a="ask">Which one is the best value?</button>
+          <button type="button" data-a="do">Buy the cheapest one</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="feat wrap" id="blocking">
+      <div class="feat-text reveal">
+        <p class="label" style="--c:var(--green)">Ad blocking</p>
+        <h3>Ads and trackers, <em>gone</em>.</h3>
+        <p>234,000 rules from 15 lists run inside WebKit itself, so ads, trackers and app telemetry are stopped before a page even asks for them. YouTube gets its own blocker for the ads that lists can't catch. One click on the shield turns blocking off for a single site.</p>
+        <ul class="ticks">
+          <li>EasyList, EasyPrivacy, AdGuard, Peter Lowe and more</li>
+          <li>Lists update by themselves once a week</li>
+          <li>Pages load lighter, so they load faster</li>
+        </ul>
+      </div>
+      <div class="demo reveal" data-demo="ads">
+        <div class="win">
+          <div class="navrow mini"><span class="addr"><svg class="lk"><use href="#lock"/></svg>dailyorbit.example/launch-recap<button type="button" class="shield on" data-shield aria-pressed="true" aria-label="Ad blocking for this site"><svg><use href="#shield"/></svg></button></span></div>
+          <div class="news" data-news>
+            <div class="ad ad-top"><span>Ad</span></div>
+            <div class="news-body">
+              <div class="art">
+                <p class="nk">Launch recap</p>
+                <p class="nh">Second stage reaches orbit on the first try</p>
+                <p class="nt">The upper stage lit on time, burned for six minutes and settled into a 400 km orbit.</p>
+                <i class="ln"></i><i class="ln"></i><i class="ln s"></i>
+                <div class="ad ad-in"><span>Sponsored</span></div>
+                <i class="ln"></i><i class="ln"></i><i class="ln"></i><i class="ln s"></i>
+                <p class="nt">Recovery teams are already out at sea for the booster, and the next flight is set for early spring.</p>
+                <i class="ln"></i><i class="ln"></i><i class="ln"></i><i class="ln"></i><i class="ln s"></i>
+                <i class="ln"></i><i class="ln"></i><i class="ln s"></i>
+              </div>
+              <div class="ad ad-side"><span>Ad</span></div>
+            </div>
+            <div class="ad ad-pop"><span>Ad</span></div>
+          </div>
+        </div>
+        <div class="blocked">
+          <p>Never loaded on this page</p>
+          <ul data-log>
+            <li>securepubads.g.doubleclick.net</li>
+            <li>pagead2.googlesyndication.com</li>
+            <li>www.googletagmanager.com</li>
+            <li>connect.facebook.net</li>
+            <li>static.criteo.net</li>
+            <li>c.amazon-adsystem.com</li>
+          </ul>
+        </div>
+        <div class="tries" role="group" aria-label="Try ad blocking">
+          <button type="button" data-shield-btn>Turn blocking off for this site</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="feat wrap flip" id="youtube">
+      <div class="feat-text reveal">
+        <p class="label" style="--c:#fff">YouTube</p>
+        <h3>YouTube, <em>without the noise</em>.</h3>
+        <p>No ads, sponsor segments skipped with SponsorBlock, the highest quality picked on every video and ambient light that spills the colors of the video around the player. YouTube also stays pitch black, the way it should look on a dark Mac.</p>
+        <ul class="ticks">
+          <li>Picture in picture for any video</li>
+          <li>Ask Max to sum up a video from its captions</li>
+          <li>Full screen video that fills the whole screen</li>
+        </ul>
+      </div>
+      <div class="demo reveal" data-demo="yt">
+        <div class="win">
+          <div class="navrow mini"><span class="addr"><svg class="lk"><use href="#lock"/></svg>youtube.com/watch?v=sunrise</span></div>
+          <div class="yt">
+            <div class="stage">
+              <div class="amb" data-amb><img src="assets/ambient.jpg" alt="" width="96" height="54"></div>
+              <div class="player" data-player>
+                <img class="frame" data-frame src="assets/horizon-960.jpg" alt="Sunrise over the curve of the Earth" width="960" height="540" loading="lazy">
+                <div class="toast" data-toast></div>
+                <button type="button" class="big-play" data-play aria-label="Play"><span></span></button>
+                <div class="ctrls">
+                  <div class="bar"><span class="seg" style="left:30%;width:13%"></span><span class="prog" data-prog></span></div>
+                  <div class="row"><span class="time" data-time>0:00 / 4:12</span><span class="q">2160p60 <b>Highest</b></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="yt-meta"><b>Sunrise from orbit, 4K</b><span>Orbit Films · 1.2M views</span></div>
+          </div>
+        </div>
+        <div class="tries" role="group" aria-label="Try YouTube">
+          <button type="button" data-play-btn>Play</button>
+          <button type="button" data-amb-btn class="on" aria-pressed="true">Ambient light</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="feat wrap" id="passwords">
+      <div class="feat-text reveal">
+        <p class="label" style="--c:var(--acc)">Passwords</p>
+        <h3>Passwords that stay <em>on your Mac</em>.</h3>
+        <p>A vault in your macOS Keychain that fills logins, offers to save new ones after you sign in and makes strong passwords for new accounts. Bring your passwords and sign-ins from Chrome or Brave, import a CSV from the Passwords app, or export one back whenever you like.</p>
+        <ul class="ticks">
+          <li>Fills only on the exact site the password belongs to</li>
+          <li>Never for this site, when you'd rather it didn't ask</li>
+          <li>Nothing leaves your Mac</li>
+        </ul>
+      </div>
+      <div class="demo reveal" data-demo="vault">
+        <div class="win">
+          <div class="navrow mini"><span class="addr"><svg class="lk"><use href="#lock"/></svg>orbit-supply.example/sign-in</span></div>
+          <div class="login">
+            <div class="lg">
+              <b class="lg-brand">Orbit Supply</b>
+              <p class="lg-title" data-lg-title>Sign in</p>
+              <span class="lab">Email</span>
+              <span class="field" data-email></span>
+              <div class="pop" data-pop>
+                <span class="pop-h"><svg><use href="#key"/></svg>Apogee Passwords</span>
+                <button type="button" class="pop-row" data-fill><span><b>alex@orbit.mail</b><small>••••••••••••</small></span><em>Fill</em></button>
+              </div>
+              <span class="lab">Password</span>
+              <span class="field pw" data-pass></span>
+              <div class="pop gen" data-gen>
+                <span class="pop-h"><svg><use href="#key"/></svg>Strong password</span>
+                <code data-pw></code>
+                <span class="gen-b"><button type="button" data-regen>New one</button><button type="button" class="use" data-use>Use it</button></span>
+              </div>
+              <span class="lg-btn" data-lg-btn>Sign in</span>
+            </div>
+          </div>
+          <div class="savebar" data-save>
+            <svg class="k"><use href="#key"/></svg>
+            <span class="sv-t" data-save-t>Save password for orbit-supply.example?</span>
+            <span class="sv-b"><button type="button" class="ghost">Never for this site</button><button type="button" class="acc" data-save-btn>Save</button></span>
+          </div>
+        </div>
+        <div class="tries" role="group" aria-label="Try passwords">
+          <button type="button" data-v="fill" class="on">Fill a saved login</button>
+          <button type="button" data-v="new">Create an account</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="feat wrap flip" id="voice">
+      <div class="feat-text reveal">
+        <p class="label" style="--c:var(--acc)">Voice</p>
+        <h3>Talk to it. <em>Out loud.</em></h3>
+        <p>Hold <kbd>⇧⌘D</kbd> to dictate, or press <kbd>⇧⌘L</kbd> for a live conversation with Max. It answers with a voice that fits its personality, cancels its own echo and lets you cut in mid-sentence. Every word lands in the chat as captions.</p>
+        <ul class="ticks">
+          <li>Understands the language your Mac is set to</li>
+          <li>Live voice connects in about a second</li>
+          <li>Hand it a task and the agent takes it from there</li>
+        </ul>
+      </div>
+      <div class="demo reveal" data-demo="voice">
+        <div class="win voice-win">
+          <div class="vpanel">
+            <div class="ph"><span class="halo" data-halo></span><b>Max</b><span class="pdim" data-vstate>Ready</span></div>
+            <div class="msgs" data-vmsgs><p class="hint">Hold the button and ask something.</p></div>
+            <div class="wave" data-wave aria-hidden="true"></div>
+            <p class="transcript" data-tr></p>
+          </div>
+        </div>
+        <div class="talk-row">
+          <button type="button" class="talk" data-talk><svg><use href="#mic"/></svg><span data-talk-t>Hold to talk</span></button>
+        </div>
+        <div class="tries" role="group" aria-label="Try voice">
+          <button type="button" data-live>Try a live conversation</button>
+        </div>
+      </div>
+    </article>
+
+    <div class="wrap more reveal">
+      <h4>And the everyday things, done well</h4>
+      <ul>
+        <li><b>Tab overview.</b> Pinch a page at 100% to see every tab.</li>
+        <li><b>Three-finger swipe</b> between tabs.</li>
+        <li><b>Translate</b> any page on your Mac, offline, with <kbd>⌥⌘T</kbd>.</li>
+        <li><b>Find in page</b> with a match count.</li>
+        <li><b>Zoom per site</b>, remembered.</li>
+        <li><b>Full screen</b> without the bars, with <kbd>⇧⌘F</kbd>.</li>
+        <li><b>Dark mode</b> on every site that has its own.</li>
+        <li><b>Downloads</b> that always ask where to save.</li>
+        <li><b>A new tab clock</b> you can make yours.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="new" id="new">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">What's new</p>
+        <h2>Version 0.3, the first <em>public</em> one.</h2>
+      </div>
+      <div class="rels">
+        <article class="rel reveal">
+          <div class="rel-v"><b>0.3</b><span>November 2026</span></div>
+          <ul>
+            <li><b>Max</b>, an assistant in every tab that reads the page and sums up videos from their captions.</li>
+            <li><b>The agent</b> clicks and types for you in the current tab, and asks before anything risky.</li>
+            <li><b>Canvas boards</b> from <kbd>?</kbd> or <kbd>⇧</kbd><kbd>↩</kbd>, with sources, diagrams and live widgets.</li>
+            <li><b>Voice</b>: dictation and live conversation.</li>
+            <li><b>Tab overview</b> and three-finger swipes between tabs.</li>
+            <li><b>Page translation</b> on device and <b>picture in picture</b>.</li>
+            <li>Address bar suggestions and find in page.</li>
+          </ul>
+        </article>
+        <article class="rel reveal">
+          <div class="rel-v"><b>0.2</b><span>Blocking and YouTube</span></div>
+          <ul>
+            <li>Ad and tracker blocking with 234,000 rules, off per site from the shield.</li>
+            <li>YouTube without ads, with SponsorBlock, highest quality and ambient light.</li>
+            <li>Password vault in the Keychain, plus import from Chrome and Brave.</li>
+            <li>Dark mode on sites that have their own, and a settings page.</li>
+          </ul>
+        </article>
+        <article class="rel reveal">
+          <div class="rel-v"><b>0.1</b><span>The browser</span></div>
+          <ul>
+            <li>A black, native window with pinned favorites, tabs and a full-width address bar.</li>
+            <li>A new tab clock you can customize, and a welcome tour.</li>
+            <li>Downloads that ask where to save, per-site zoom and keyboard shortcuts.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="compare" id="compare">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">Compare</p>
+        <h2>What you get <em>out of the box</em>.</h2>
+      </div>
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr><th scope="col"><span class="sr">Feature</span></th><th scope="col" class="me">Apogee</th><th scope="col">Safari</th><th scope="col">Chrome</th><th scope="col">Arc</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Engine</th><td class="me">WebKit, native</td><td>WebKit</td><td>Chromium</td><td>Chromium</td></tr>
+            <tr><th scope="row">Blocks ads on every site</th><td class="me yes">Built in</td><td>Extension</td><td>Extension</td><td>Extension</td></tr>
+            <tr><th scope="row">YouTube without ads</th><td class="me yes">Built in</td><td>Extension</td><td>Extension</td><td>Extension</td></tr>
+            <tr><th scope="row">Skips sponsor segments</th><td class="me yes">Built in</td><td>Extension</td><td>Extension</td><td>Extension</td></tr>
+            <tr><th scope="row">Highest video quality, every time</th><td class="me yes">Automatic</td><td>Manual</td><td>Manual</td><td>Manual</td></tr>
+            <tr><th scope="row">Answer boards from the address bar</th><td class="me yes">Built in</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+            <tr><th scope="row">Agent that clicks and types for you</th><td class="me yes">Free, with your key</td><td class="no">No</td><td>Paid plans, US only</td><td class="no">No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note reveal">Checked in November 2026. Extension means you find and install it yourself.</p>
+    </div>
+  </section>
+
+  <section class="install" id="install">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">Install</p>
+        <h2>Up and running in a <em>minute</em>.</h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><div><b>Download</b> the DMG for your Mac and open it.</div></li>
+        <li class="reveal"><div><b>Drag Apogee</b> into your Applications folder.</div></li>
+        <li class="reveal"><div><b>Open it the long way, once.</b> Apogee isn't notarized by Apple yet, so the first launch shows a warning. Here's how past it:
+          <div class="os">
+            <div><span class="os-n">macOS 15 Sequoia and newer</span><p>Close the warning. Open System Settings, go to Privacy &amp; Security, scroll down to Security and click <b>Open Anyway</b>. Confirm with your password and Apogee opens.</p></div>
+            <div><span class="os-n">macOS 14 Sonoma</span><p>Right-click Apogee in Applications, choose <b>Open</b>, then click <b>Open</b> again in the dialog.</p></div>
+          </div></div>
+        </li>
+        <li class="reveal"><div><b>Add an AI key</b> if you want Max, the agent, canvas and voice. Get a free Gemini key at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> and paste it in Settings, AI keys (<kbd>⌘,</kbd>). It stays in your Keychain and goes only to Google. Add a few and Apogee moves to the next one when a key hits its limit. Everything else works without one.</div></li>
+      </ol>
+      <div class="req reveal">
+        <div><span>System</span><b>macOS 14 Sonoma or later</b></div>
+        <div><span>Mac</span><b>Apple Silicon or Intel</b></div>
+        <div><span>Download</span><b data-req-size>About 1.5 MB</b></div>
+        <div><span>AI</span><b>Your own free Gemini key</b></div>
+      </div>
+      <div class="good reveal">
+        <h4>Good to know</h4>
+        <p>iCloud Passwords and passkeys need permissions Apple gives only to approved browsers, so they don't fill in Apogee. Your Apogee vault does. New versions show up on this page first.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="end">
+    <div class="end-sky" aria-hidden="true"><img src="assets/horizon-960.jpg" alt="" width="960" height="540" loading="lazy"></div>
+    <div class="wrap end-in reveal">
+      <svg class="arch big"><use href="#arch"/></svg>
+      <h2>See the web from the <em>top</em>.</h2>
+      <div class="dl" data-dl>
+        <a class="chip" data-arch="arm64" href="https://github.com/JerzySukiennik/apogee/releases/latest/download/Apogee-Apple-Silicon.dmg">
+          <svg class="chip-ic"><use href="#chip"/></svg>
+          <span class="chip-t"><b>Apple Silicon</b><small>M1 and newer</small></span>
+          <svg class="chip-dl"><use href="#down"/></svg>
+          <span class="chip-tag">Your Mac</span>
+        </a>
+        <a class="chip" data-arch="x86_64" href="https://github.com/JerzySukiennik/apogee/releases/latest/download/Apogee-Intel.dmg">
+          <svg class="chip-ic"><use href="#chip"/></svg>
+          <span class="chip-t"><b>Intel</b><small>Intel Macs</small></span>
+          <svg class="chip-dl"><use href="#down"/></svg>
+          <span class="chip-tag">Your Mac</span>
+        </a>
+      </div>
+      <p class="dl-meta"><span data-dl-note>Version 0.3 · Free · macOS 14 Sonoma or later</span></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="gl" href="https://gzowo.fun" aria-label="Gzowo Labs"><img src="assets/gzowo-labs.svg" alt="Gzowo Labs" width="220" height="40"></a>
+    <p>Apogee is made by Gzowo Labs. Rockets, games, 3D prints and AI.</p>
+    <nav class="foot-links" aria-label="Links">
+      <a href="https://gzowo.fun">gzowo.fun</a>
+      <a href="https://www.instagram.com/gzowo_labs/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://github.com/JerzySukiennik/apogee/releases" target="_blank" rel="noopener">All releases</a>
+    </nav>
+    <p class="fine">© 2026 Gzowo Labs. Not affiliated with Apple or Google.</p>
+  </div>
+</footer>
+</body>
+</html>
